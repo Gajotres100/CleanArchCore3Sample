@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SaaSApiDemo.Configuration;
+using SaaSApiDemo.Middleware;
 
 namespace SaaSApiDemo
 {
@@ -20,10 +21,9 @@ namespace SaaSApiDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
             services.AddVersioning();
-
             services.AddOpenApi();
+            services.AddMvc();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -33,6 +33,7 @@ namespace SaaSApiDemo
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseHttpStatusCodeExceptionMiddleware();
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseOpenApi();
