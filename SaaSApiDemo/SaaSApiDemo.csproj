@@ -10,4 +10,9 @@
     <PackageReference Include="NSwag.AspNetCore" Version="13.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCases\Assets\" />
+    <Folder Include="UseCases\Products\" />
+  </ItemGroup>
+
 </Project>

@@ -13,7 +13,7 @@ namespace SaaSApiDemo.UseCases.Users.GetUser
     public class UsersController : ControllerBase
     {
         [HttpGet()]
-        [Route("{tenantId:guid}")]
+        [Route("{userId:guid}")]
         public async Task<IActionResult> GetAsync([FromRoute]Guid tenantId) => Ok(tenantId);
     }
 }

@@ -13,7 +13,7 @@ namespace SaaSApiDemo.UseCases.Users.DeleteUser
     public class UsersController : ControllerBase
     {
         [HttpDelete()]
-        [Route("{tenantId:guid}")]
+        [Route("{userId:guid}")]
         public async Task<IActionResult> DeleteAsync([FromRoute]Guid tenantId) => Ok(tenantId);
     }
 }
