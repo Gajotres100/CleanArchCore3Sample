@@ -23,7 +23,6 @@ namespace SaaSApiDemo
             services.AddControllers();
             services.AddVersioning();
             services.AddOpenApi();
-            services.AddMvc();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -38,6 +37,10 @@ namespace SaaSApiDemo
             app.UseRouting();
             app.UseOpenApi();
             app.UseSwaggerUi3();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }
