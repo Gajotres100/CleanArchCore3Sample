@@ -8,7 +8,7 @@ namespace SaaSApiDemo.UseCases.Tenants.AddTenant
 {
     public class AddTenantModel
     {
-        public class BodyData
+        public class AddTenantData
         {
             [FromBody] public string CompanyId { get; set; }
             [FromBody] public string CompanyName { get; set; }
@@ -19,6 +19,6 @@ namespace SaaSApiDemo.UseCases.Tenants.AddTenant
             [FromBody] public string TransactionId { get; set; }
         }
 
-        [FromBody] public BodyData Data { get; set; }
+        [FromBody] public AddTenantData Data { get; set; }
     }
 }

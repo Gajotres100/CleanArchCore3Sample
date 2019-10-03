@@ -8,7 +8,7 @@ namespace SaaSApiDemo.UseCases.Tenants.UpdateTenant
 {
     public class UpdateTenantModel
     {
-        public class BodyData
+        public class UpdateTenantData
         {            
             [FromBody] public string CompanyName { get; set; }
             [FromBody] public string Address { get; set; }
@@ -18,7 +18,7 @@ namespace SaaSApiDemo.UseCases.Tenants.UpdateTenant
             [FromBody] public string TransactionId { get; set; }
         }
 
-        [FromBody] public BodyData Data { get; set; }
+        [FromBody] public UpdateTenantData Data { get; set; }
         [FromRoute(Name = "tenantId")] public Guid TenantID { get; set; }
     }
 }
