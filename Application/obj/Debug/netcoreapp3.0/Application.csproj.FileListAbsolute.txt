@@ -1,0 +1,5 @@
+C:\Users\apisit\source\repos\SaaSApiDemo\Application\bin\Debug\netcoreapp3.0\Application.deps.json
+C:\Users\apisit\source\repos\SaaSApiDemo\Application\bin\Debug\netcoreapp3.0\Application.dll
+C:\Users\apisit\source\repos\SaaSApiDemo\Application\obj\Debug\netcoreapp3.0\Application.csprojAssemblyReference.cache
+C:\Users\apisit\source\repos\SaaSApiDemo\Application\obj\Debug\netcoreapp3.0\Application.AssemblyInfoInputs.cache
+C:\Users\apisit\source\repos\SaaSApiDemo\Application\obj\Debug\netcoreapp3.0\Application.AssemblyInfo.cs
