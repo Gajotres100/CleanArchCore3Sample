@@ -1,0 +1,8 @@
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\bin\Debug\netcoreapp3.0\Perisatance.deps.json
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\bin\Debug\netcoreapp3.0\Perisatance.dll
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\bin\Debug\netcoreapp3.0\Perisatance.pdb
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\obj\Debug\netcoreapp3.0\Perisatance.csprojAssemblyReference.cache
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\obj\Debug\netcoreapp3.0\Perisatance.AssemblyInfoInputs.cache
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\obj\Debug\netcoreapp3.0\Perisatance.AssemblyInfo.cs
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\obj\Debug\netcoreapp3.0\Perisatance.dll
+C:\Users\apisit\source\repos\SaaSApiDemo\Perisatance\obj\Debug\netcoreapp3.0\Perisatance.pdb

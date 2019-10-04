@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc.Versioning;
+﻿using Akka.Actor;
+using Application.UserCases.Tenants;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.DependencyInjection;
 using NSwag.Generation.AspNetCore;
 
@@ -43,6 +45,19 @@ namespace SaaSApiDemo.Configuration
 
             options.Description = "A demo API";
             options.IgnoreObsoleteProperties = true;
+        }
+
+        public static void AddDiContainer(this IServiceCollection services)
+        {
+            services.AddSingleton(_ => ActorSystem.Create("saasapi"));
+
+            services.AddSingleton<TenantActorProvider>(provider =>
+            {
+                var actorSystem = provider.GetService<ActorSystem>();
+                var tenantManagerActor = actorSystem.ActorOf(Props.Create(() => new TenantManagerActor()));
+                return () => tenantManagerActor;
+            });
+
         }
     }
 }

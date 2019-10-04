@@ -23,6 +23,7 @@ namespace SaaSApiDemo
             services.AddControllers();
             services.AddVersioning();
             services.AddOpenApi();
+            services.AddDiContainer();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -1,0 +1,8 @@
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\bin\Debug\netcoreapp3.0\Common.deps.json
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\bin\Debug\netcoreapp3.0\Common.dll
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\obj\Debug\netcoreapp3.0\Common.csprojAssemblyReference.cache
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfoInputs.cache
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfo.cs
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\obj\Debug\netcoreapp3.0\Common.dll
+C:\Users\apisit\source\repos\SaaSApiDemo\Common\obj\Debug\netcoreapp3.0\Common.pdb
