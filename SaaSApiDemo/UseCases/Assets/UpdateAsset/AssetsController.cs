@@ -12,5 +12,8 @@ namespace SaaSApiDemo.UseCases.Assets.UpdateAsset
     [Route("api/v{version:apiVersion}/Tenants/{tenantId}/[controller]")]
     public class AssetsController : ControllerBase
     {
+        [HttpPost()]
+        [Route("assetId")]
+        public async Task<IActionResult> PostAsync([FromRoute]UpdateAssetModel data) => Ok(data);
     }
 }
