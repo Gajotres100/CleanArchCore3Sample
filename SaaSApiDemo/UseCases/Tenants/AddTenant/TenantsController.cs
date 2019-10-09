@@ -1,5 +1,8 @@
-﻿using Application.UserCases.Tenants.Commands;
+﻿using Akka.Actor;
+using Application.UserCases.Tenants;
+using Application.UserCases.Tenants.Commands;
 using Microsoft.AspNetCore.Mvc;
+using SaaSApiDemo.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +16,20 @@ namespace SaaSApiDemo.UseCases.Tenants.AddTenant
     [Route("api/v{version:apiVersion}/[controller]")]
     public class TenantsController : ControllerBase
     {
+        private readonly IActorRef _tenantManagerActor;
+
+        public TenantsController(TenantActorProvider tenantManagerActorProvider)
+        {
+            _tenantManagerActor = tenantManagerActorProvider();
+        }
+
         [HttpPost()]
         [Route("")]
-        public async Task<IActionResult> PostAsync([FromRoute]AddTenantModel data) => Ok(data);
+        public async Task<IActionResult> PostAsync([FromRoute]AddTenantModel data)
+        {
+            _tenantManagerActor.Tell(data);
+            return Accepted();
+        }
+        
     }
 }
