@@ -4,14 +4,14 @@
     "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\SaaSApiDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\SaaSApiDemo.csproj": {
+    "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\SaaSApiDemo.csproj",
-        "projectName": "SaaSApiDemo",
-        "projectPath": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\SaaSApiDemo.csproj",
+        "projectUniqueName": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\apisit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\obj\\",
+        "outputPath": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,81 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Akka": {
+              "target": "Package",
+              "version": "[1.3.15, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\SaaSApiDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\SaaSApiDemo.csproj",
+        "projectName": "SaaSApiDemo",
+        "projectPath": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\SaaSApiDemo.csproj",
+        "packagesPath": "C:\\Users\\apisit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\SaaSApiDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\apisit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\apisit\\source\\repos\\SaaSApiDemo\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Akka": {
+              "target": "Package",
+              "version": "[1.3.15, )"
+            },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
               "version": "[4.0.0-preview8.19405.7, )"

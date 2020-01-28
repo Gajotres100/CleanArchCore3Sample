@@ -31,3 +31,6 @@ C:\Users\apisit\source\repos\SaaSApiDemo\SaaSApiDemo\obj\Debug\netcoreapp3.0\Saa
 C:\Users\apisit\source\repos\SaaSApiDemo\SaaSApiDemo\obj\Debug\netcoreapp3.0\SaaSApiDemo.dll
 C:\Users\apisit\source\repos\SaaSApiDemo\SaaSApiDemo\obj\Debug\netcoreapp3.0\SaaSApiDemo.pdb
 C:\Users\apisit\source\repos\SaaSApiDemo\SaaSApiDemo\obj\Debug\netcoreapp3.0\SaaSApiDemo.csprojAssemblyReference.cache
+C:\Users\apisit\source\repos\SaaSApiDemo\SaaSApiDemo\bin\Debug\netcoreapp3.0\Application.dll
+C:\Users\apisit\source\repos\SaaSApiDemo\SaaSApiDemo\bin\Debug\netcoreapp3.0\Akka.dll
+C:\Users\apisit\source\repos\SaaSApiDemo\SaaSApiDemo\bin\Debug\netcoreapp3.0\Application.pdb
